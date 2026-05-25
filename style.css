@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: transparent;
+    color: #eaeaf0;
+}
+
+/* CONTAINER */
+.container {
+    width: 820px;
+    display: flex;
+    gap: 20px;
+}
+
+/* COLUMNS */
+.column {
+    flex: 1;
+    padding: 14px;
+    border-radius: 14px;
+
+    /* 🔥 dopasowane do paneli z tabel */
+    background: linear-gradient(
+        135deg,
+        #1b0f2e,
+        #2a1450,
+        #1b0f2e
+    );
+
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+/* PLAYER */
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+
+    background: rgba(10, 10, 18, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    transition: 0.25s;
+}
+
+/* hover */
+.player:hover {
+    background: rgba(212, 175, 55, 0.08);
+    transform: translateX(2px);
+}
+
+/* LEFT */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* AVATAR */
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* RANK */
+.rank {
+    width: 28px;
+    text-align: center;
+    color: #aaa;
+}
+
+/* NAME */
+.name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #eaeaf0;
+}
+
+/* POINTS */
+.points {
+    font-weight: bold;
+    color: #f5d36a; /* złoto jak w tabeli */
+}
+
+/* WIN */
+.player.win {
+    border: 1px solid rgba(255, 215, 0, 0.9);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.25);
+    background: rgba(255, 215, 0, 0.08);
+}
+
+/* 20+ POINTS */
+.player.achieved20 {
+    border: 1px solid rgba(212, 175, 55, 0.6);
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.25);
+    background: rgba(212, 175, 55, 0.06);
+}
